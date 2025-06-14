@@ -1,0 +1,37 @@
+// Từ ổ C chuyển sang ổ D : D:
+// Nếu tên folder có ký tự đặc biệt hoặc khoảng cách thì dùng : cd "Ty Files\JavaScript"
+// 
+
+1- Khởi tạo project 
+mkdir playwright-project
+2- Vào project đó 
+cd playwright-project
+
+1. Run file test : npx playwright test login.spec.ts
+2. Check xem có bao nhiêu browser đang mở : npx playwright show-report
+3. Run TCs : npx playwright test  --headed
+4. Giao diện test Playwright xuất hiện : npx playwright test --ui
+
+-----------------TOSCA
+SUT (System Under Test)
+New Account : tyty1995@gmail.com / TyTy12345@
+
+ Select Credit Card: Visa
+• Cardholder name: Barbara Gordon
+• Card number: 4485 5640 5948 9345
+• Expiration date Month: 04
+• Expiration date Year: 2024
+• Card code: 123
+
+--------------4 section important for Tosca
+1. Module : controls in SUT 
+2. Testcase : need business information, necessary to instruct tosca SUT
+3. Execution : execute all tcs 
+4. Requirement : setup the req of SUT
+--------------Anchor controls (điểm cố định tham chiếu,  giúp Tosca định vị một phần tử (control) dựa vào một phần tử khác gần nó khi UI động) 
+có 2 options : 
+1. ShortestPath : giúp Tosca chọn đường dẫn tìm control tối ưu
+- Khi bạn bật shortestPath, Tosca chỉ chọn những TestCases và TestSteps cần thiết nhất để đạt được một mục tiêu kiểm thử cụ thể.
+- Nó bỏ qua những phần không cần thiết hoặc trùng lặp, nhằm rút ngắn thời gian thực thi.
+2. Coordinate : xác định vị trí tương đối giữa anchor và control mục tiêu
+

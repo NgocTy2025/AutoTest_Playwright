@@ -1,0 +1,12 @@
+// Từ ổ C chuyển sang ổ D : D:
+// Nếu tên folder có ký tự đặc biệt hoặc khoảng cách thì dùng : cd "Ty Files\JavaScript"
+// 
+
+1- Khởi tạo project 
+mkdir playwright-project
+2- Vào project đó 
+cd playwright-project
+
+-----------------
+SUT (System Under Test)
+New Account : tyty1995@gmail.com / TyTy12345@	
