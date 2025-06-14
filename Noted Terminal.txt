@@ -35,3 +35,4 @@ có 2 options :
 - Nó bỏ qua những phần không cần thiết hoặc trùng lặp, nhằm rút ngắn thời gian thực thi.
 2. Coordinate : xác định vị trí tương đối giữa anchor và control mục tiêu
 
+dfkajfkjjk
